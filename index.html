@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png/image" href="https://tse2.mm.bing.net/th?id=OIP.hOsqCfDt9oea40gcXNOopAHaHa&pid=Api&P=0&h=220" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fira+Sans:wght@500&family=Mulish:wght@200&family=Oswald:wght@200&family=Rubik+Iso&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Fira Sans', sans-serif">
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">
+          <i
+            class="fa-solid fa-couch fa-beat-fade m-2"
+            style="color: #b82e43"
+          ></i>
+          Chandran's Furniture Mart
+        </a>
+      </div>
+    </nav>
+    <!-- BANNER -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://hmifurniture.in/wp-content/uploads/2021/09/blog-1.jpg"
+            style="width: 1024px; height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/1200x/b7/a8/cf/b7a8cf1535d1d8b4994c690102e473e2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://t4.ftcdn.net/jpg/04/66/25/33/360_F_466253361_c4fAjCqVZD4L2boH8vfqjUbUYk0wLcP7.jpg"
+            style="width: 1024px; height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- CARD -->
+    <div class="row mt-5 ms-5">
+      <div class="col-3">
+        <div class="card" style="width: 18rem">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="card-img-top"
+            style="height: 200px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Table and Chair</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlJTIwZGVzaWdufGVufDB8fDB8fHww&w=1000&q=80"
+            class="card-img-top"
+            style="height: 200px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Blue Chair</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJTFNTSOYXYNokUA5wrrUKKLAqG85O7gkx9jA7VESv85IJCVV3sMLxyQknRCUlH-s024&usqp=CAU"
+            class="card-img-top"
+            style="height: 200px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Dineing Table</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://cdn.pixabay.com/photo/2014/08/11/21/39/wall-416060_640.jpg"
+            class="card-img-top"
+            style="height: 200px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Book Shelf</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >Chandran's Furniture</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
